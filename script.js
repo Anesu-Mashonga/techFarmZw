@@ -1,5 +1,6 @@
-// Placeholder JavaScript to enhance functionality (if needed)
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('TechFarmZw Store is ready!');
-  });
-  
+const hamburger = document.getElementById("hamburger");
+const navList = document.getElementById("nav-list");
+
+hamburger.addEventListener("click", () => {
+    navList.classList.toggle("active");
+});
