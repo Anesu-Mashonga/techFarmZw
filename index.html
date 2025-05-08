@@ -3,254 +3,734 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechFarmZw - Online Store</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>TechFarmZw - Premium Phones & Accessories</title>
+    <meta name="description" content="TechFarmZw offers the latest smartphones, accessories, and tech gadgets at competitive prices. Free delivery nationwide.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="#"><img src="./img/techfarmlogo.jpg" alt="TechFarmZw Logo"></a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-list" id="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#cart">Cart</a></li>
-            </ul>
-        </nav>
-        <section class="hero">
-            <h1>Welcome to TechFarmZw</h1>
-            <p>Your one-stop shop for all tech needs</p>
-        </section>
-    </header>
+<body class="page-body">
 
-    <section class="categories">
-        <ul class="category-list">
-            <li class="category-item">
-                <img src="./img/fluent-color--phone-32.png" alt="">
-                <div>Smartphones</div>
-                <ul class="dropdown">
-                    <li>Samsung</li>
-                    <li>Apple</li>
-                    <li>Other</li>
-                </ul>
-            </li>
-            <li class="category-item">
-                <img src="./img/fluent-color--bot-sparkle-24.png" alt="">
-                <div>Electronics</div>
-                <ul class="dropdown">
-                    <li>Electronics 1</li>
-                    <li>Electronics 2</li>
-                    <li>Electronics 3</li>
-                </ul>
-            </li>
-            <li class="category-item">
-                <img src="./img/fluent-color--laptop-32.png" alt="">
-                <div>Computers</div>
-                <ul class="dropdown">
-                    <li>Computers 1</li>
-                    <li>Computers 2</li>
-                    <li>Computers 3</li>
-                </ul>
-            </li>
-            <li class="category-item">
-                <img src="./img/fluent-color--camera-24.png" alt="">
-                <div>Home & Garden</div>
-                <ul class="dropdown">
-                    <li>Home 1</li>
-                    <li>Garden 1</li>
-                    <li>Garden 2</li>
-                </ul>
-            </li>
-            <li class="category-item">
-                <img src="./img/fluent-color--headphones-20.png" alt="">
-                <div>Accessories</div>
-                <ul class="dropdown">
-                    <li>Accessories 1</li>
-                    <li>Accessories 2</li>
-                    <li>Accessories 3</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+    <nav class="navigation-bar">
+        <div class="nav-container">
+            <div class="nav-main-content">
+                <div class="logo-container">
+                    <a href="#" class="logo-link">
+                        <i class="fas fa-mobile-alt logo-icon"></i>
+                        <span>TechFarm<span class="logo-accent">Zw</span></span>
+                    </a>
+                </div>
 
-    <section class="tech-space">
-        <div class="tech-items">
-            <div class="tech1">
-                <p>
-                    LG WING boasts a unique form factor that presents consumers with new
-                    and compellingly different mobile experiences. Boasting the
-                    inventive Swivel form factor, Flawless P-OLED FullDivision Display
-                    Main Screen, Second Screen, a Pop Up Front Camera, and a Gimbal
-                    Motion Camera - the LG WING is designed to break away from the norm
-                    and elevate the bar for form innovation and user experience.
-                </p>
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/XlpIoOVFhws?si=UXSOjtp3oFrwUwvd"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                ></iframe>
+                <div class="desktop-menu">
+                    <a href="#" class="nav-item">Home</a>
+                    <div class="dropdown-menu-container">
+                        <a href="#" class="nav-item dropdown-toggle">
+                            Phones <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">Smartphones</a>
+                            <a href="#" class="dropdown-item">Feature Phones</a>
+                            <a href="#" class="dropdown-item">Refurbished</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-item">Accessories</a>
+                    <a href="#" class="nav-item">Deals</a>
+                    <a href="#" class="nav-item">About</a>
+                    <a href="#" class="nav-item">Contact</a>
+                </div>
+
+                <div class="nav-icons-container">
+                    <div class="search-bar-container">
+                        <input type="text" placeholder="Search..." class="search-input-field">
+                        <i class="fas fa-search search-icon"></i>
+                        <div class="search-results-dropdown">
+                            <a href="#" class="search-result-item">iPhone 15</a>
+                            <a href="#" class="search-result-item">Samsung S23</a>
+                            <a href="#" class="search-result-item">Google Pixel 7</a>
+                        </div>
+                    </div>
+                    <a href="#" class="icon-link wishlist-icon-link">
+                        <i class="fas fa-heart icon"></i>
+                        <span class="icon-badge">3</span>
+                    </a>
+                    <a href="#" class="icon-link cart-icon-link">
+                        <i class="fas fa-shopping-cart icon"></i>
+                        <span class="icon-badge">2</span>
+                    </a>
+                    <button id="mobile-menu-button" class="mobile-menu-toggle">
+                        <i class="fas fa-bars icon"></i>
+                    </button>
+                </div>
             </div>
-            <hr />
-            <div class="tech2">
-                <p>
-                    Virtual Reality (VR) Goggles offer immersive experiences that
-                    transform how we interact with digital content. Explore the world of
-                    VR with the latest innovations in hardware and software.
-                </p>
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/oAf5M4Q0Pu8?si=u4IM2xHnrwg0hGhD"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
+
+            <div id="mobile-menu" class="mobile-nav-menu">
+                <div class="mobile-nav-items-container">
+                    <a href="#" class="mobile-nav-item">Home</a>
+                    <div>
+                        <button class="mobile-nav-dropdown-toggle">
+                            Phones
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="mobile-nav-dropdown-content">
+                            <a href="#" class="mobile-nav-dropdown-item">Smartphones</a>
+                            <a href="#" class="mobile-nav-dropdown-item">Feature Phones</a>
+                            <a href="#" class="mobile-nav-dropdown-item">Refurbished</a>
+                        </div>
+                    </div>
+                    <a href="#" class="mobile-nav-item">Accessories</a>
+                    <a href="#" class="mobile-nav-item">Deals</a>
+                    <a href="#" class="mobile-nav-item">About</a>
+                    <a href="#" class="mobile-nav-item">Contact</a>
+                </div>
             </div>
-            <hr />
-            <div class="tech3">
-                <p>
-                    Laptops have become essential tools for both work and leisure. The
-                    latest laptops bring high performance, portability, and sleek
-                    designs that cater to various user needs.
-                </p>
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/9_FQW36r0n8?si=v13oXBHD14Qs_IDC"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                ></iframe>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-text-content">
+                <h1 class="hero-title">Premium Phones at Unbeatable Prices</h1>
+                <p class="hero-subtitle">Discover the latest smartphones and accessories with free nationwide delivery and 12-month warranty.</p>
+                <div class="hero-buttons-container">
+                    <a href="#" class="hero-button-primary">Shop Now</a>
+                    <a href="#" class="hero-button-secondary">Latest Deals</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <img src="./img/15proxMax.png" alt="Latest smartphones" class="hero-image">
+                    <div class="hero-image-caption">
+                        <p class="hero-image-caption-title">iPhone 15 Pro Max</p>
+                        <p class="hero-image-caption-price">$1,299</p>
+                        <div class="hero-image-caption-rating">
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star-half-alt rating-star"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="shop">
-        <h2>Shop</h2>
-        <div class="products">
-            <div class="product">
-                <img src="./img/pic1.jpg" alt="Product 1">
-                <h3>Product 1</h3>
-                <p class="price">$29.99</p>
-            </div>
-            <div class="product">
-                <img src="./img/pic2.jpg" alt="Product 2">
-                <h3>Product 2</h3>
-                <p class="price">$49.99</p>
-            </div>
-            <div class="product">
-                <img src="./img/pic3.jpg" alt="Product 3">
-                <h3>Product 3</h3>
-                <p class="price">$99.99</p>
-            </div>
-            <div class="product">
-                <img src="./img/pic4.jpg" alt="Product 4">
-                <h3>Product 4</h3>
-                <p class="price">$19.99</p>
-            </div>
-            <div class="product">
-                <img src="./img/pic5.jpg" alt="Product 5">
-                <h3>Product 5</h3>
-                <p class="price">$59.99</p>
-            </div>
-            <div class="product">
-                <img src="./img/pic6.jpg" alt="Product 6">
-                <h3>Product 6</h3>
-                <p class="price">$39.99</p>
-            </div>
-            <div class="product">
-                <img src="./img/pic7.jpg" alt="Product 7">
-                <h3>Product 7</h3>
-                <p class="price">$89.99</p>
-            </div>
-            <div class="product">
-                <img src="./img/pic8.jpg" alt="Product 8">
-                <h3>Product 8</h3>
-                <p class="price">$79.99</p>
-            </div>
-            <div class="product">
-                <img src="./img/pic9.jpg" alt="Product 9">
-                <h3>Product 9</h3>
-                <p class="price">$24.99</p>
-            </div>
-            <div class="product">
-                <img src="./img/pic10.jpg" alt="Product 10">
-                <h3>Product 10</h3>
-                <p class="price">$109.99</p>
-            </div>
-            <div class="product">
-                <img src="./img/pic11.jpg" alt="Product 11">
-                <h3>Product 11</h3>
-                <p class="price">$149.99</p>
-            </div>
-            <div class="product">
-                <img src="./img/pic12.jpg" alt="Product 12">
-                <h3>Product 12</h3>
-                <p class="price">$199.99</p>
+    <section class="featured-brands-section">
+        <div class="featured-brands-container">
+            <h2 class="section-title featured-brands-title">Shop by Brand</h2>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg" alt="HP" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="./img/Huawei_Standard_logo.svg.png" alt="Huawei" class="brand-logo">
+                </div>
+                <div class="brand-card">
+                    <img src="./img/Xiaomi_logo_(2021-).svg.png" alt="Xiaomi" class="brand-logo">
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>
-            TechFarm ZW is a prominent and well-established business based in the
-            heart of Harare, Zimbabwe. Specializing in a wide range of high-quality
-            cellphones, accessories, and electronics, TechFarm ZW has earned a
-            reputation for delivering cutting-edge products and exceptional customer
-            service to Zimbabwe's growing tech community. Located at 53 Kwame
-            Nkrumah Avenue, Harare, this company caters to a diverse clientele with
-            varying needs, from the latest mobile devices to essential accessories
-            and innovative electronic solutions. Whether you're looking for the
-            newest smartphone models, chargers, headphones, or other tech
-            essentials, TechFarm ZW offers a comprehensive selection that keeps up
-            with the latest trends in the global technology market.
-        </p>
+    <section class="featured-products-section">
+        <div class="featured-products-container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <a href="#" class="view-all-link">
+                    View All <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-display-card">
+                    <div class="product-image-container">
+                        <img src="./img/iphone15promax.png" alt="iPhone 15 Pro" class="product-image">
+                        <div class="product-compare-action">
+                            <input type="checkbox" id="compare1" class="compare-input-checkbox">
+                            <label for="compare1" class="compare-input-label">
+                                <i class="fas fa-exchange-alt"></i>
+                            </label>
+                        </div>
+                        <div class="product-quick-info">
+                            <p class="product-quick-info-text">6.7" Super Retina XDR display, A16 Bionic chip, 48MP camera</p>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">iPhone 15 Pro Max</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star-half-alt rating-star"></i>
+                            <span class="rating-count">(42)</span>
+                        </div>
+                        <div class="product-price-action">
+                            <p class="product-price">$1,299</p>
+                            <button class="add-to-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-display-card">
+                    <div class="product-image-container">
+                        <img src="./img/pic1.jpg" alt="Samsung Galaxy S23 Ultra" class="product-image">
+                        <div class="product-compare-action">
+                            <input type="checkbox" id="compare2" class="compare-input-checkbox">
+                            <label for="compare2" class="compare-input-label">
+                                <i class="fas fa-exchange-alt"></i>
+                            </label>
+                        </div>
+                        <div class="product-quick-info">
+                            <p class="product-quick-info-text">6.8" Dynamic AMOLED, Snapdragon 8 Gen 2, 200MP camera</p>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Samsung Galaxy S23 Ultra</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="far fa-star rating-star"></i>
+                            <span class="rating-count">(36)</span>
+                        </div>
+                        <div class="product-price-action">
+                            <p class="product-price">$1,199</p>
+                            <button class="add-to-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-display-card">
+                    <div class="product-image-container">
+                        <img src="./img/pic2.jpg" alt="Google Pixel 7 Pro" class="product-image">
+                        <div class="product-compare-action">
+                            <input type="checkbox" id="compare3" class="compare-input-checkbox">
+                            <label for="compare3" class="compare-input-label">
+                                <i class="fas fa-exchange-alt"></i>
+                            </label>
+                        </div>
+                        <div class="product-quick-info">
+                            <p class="product-quick-info-text">6.7" LTPO OLED, Google Tensor G2, 50MP camera</p>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Google Pixel 7 Pro</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <span class="rating-count">(28)</span>
+                        </div>
+                        <div class="product-price-action">
+                            <p class="product-price">$899</p>
+                            <button class="add-to-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-display-card">
+                    <div class="product-image-container">
+                        <img src="./img/pic3.jpg" alt="OnePlus 11" class="product-image">
+                        <div class="product-compare-action">
+                            <input type="checkbox" id="compare4" class="compare-input-checkbox">
+                            <label for="compare4" class="compare-input-label">
+                                <i class="fas fa-exchange-alt"></i>
+                            </label>
+                        </div>
+                        <div class="product-quick-info">
+                            <p class="product-quick-info-text">6.7" Fluid AMOLED, Snapdragon 8 Gen 2, 50MP camera</p>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">OnePlus 11 5G</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="far fa-star rating-star"></i>
+                            <span class="rating-count">(19)</span>
+                        </div>
+                        <div class="product-price-action">
+                            <p class="product-price">$799</p>
+                            <button class="add-to-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            If you have any questions or need assistance, feel free to reach out!
-        </p>
-        <form action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <section class="special-offers-section">
+        <div class="special-offers-container">
+            <h2 class="section-title special-offers-title">Special Offers</h2>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-image-container">
+                        <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="iPhone Deal" class="offer-image">
+                        <div class="offer-badge discount-badge">-20%</div>
+                    </div>
+                    <div class="offer-details">
+                        <h3 class="offer-name">iPhone 14 Pro</h3>
+                        <p class="offer-description">Now with 20% discount for limited time only!</p>
+                        <div class="offer-pricing">
+                            <p class="offer-current-price">$959</p>
+                            <p class="offer-original-price">$1,199</p>
+                        </div>
+                        <div class="offer-timer">
+                            <i class="fas fa-clock"></i>
+                            <span>Offer ends in 2 days 4 hours</span>
+                        </div>
+                        <button class="offer-button">
+                            Get This Deal
+                        </button>
+                    </div>
+                </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
+                <div class="offer-card">
+                    <div class="offer-image-container">
+                        <img src="./img/pic4.jpg" alt="Bundle Deal" class="offer-image">
+                        <div class="offer-badge bundle-badge">Bundle</div>
+                    </div>
+                    <div class="offer-details">
+                        <h3 class="offer-name">Galaxy S23 + Buds2 Pro</h3>
+                        <p class="offer-description">Premium phone with wireless earbuds at special price!</p>
+                        <div class="offer-pricing">
+                            <p class="offer-current-price">$1,099</p>
+                            <p class="offer-original-price">$1,298</p>
+                        </div>
+                        <div class="offer-timer">
+                            <i class="fas fa-gift"></i>
+                            <span>Save $199 on this bundle</span>
+                        </div>
+                        <button class="offer-button">
+                            Get This Bundle
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="cart">
-        <h2>Your Cart</h2>
-        <p>
-            Your cart is currently empty. Add some products to your cart to proceed
-            with checkout.
-        </p>
+    <div id="product-modal" class="modal-overlay product-details-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">iPhone 15 Pro Max</h2>
+                <button id="close-modal" class="modal-close-button">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-product-gallery">
+                    <div class="modal-main-image-container">
+                        <img src="./img/pic9.jpg" alt="iPhone 15 Pro Max" class="modal-main-image">
+                    </div>
+                    <div class="modal-thumbnail-grid">
+                        <div class="modal-thumbnail-item">
+                            <img src="./img/pic8.jpg" alt="iPhone Blue" class="modal-thumbnail-image">
+                        </div>
+                        <div class="modal-thumbnail-item active-thumbnail">
+                            <img src="./img/pic7.jpg" alt="iPhone Black" class="modal-thumbnail-image">
+                        </div>
+                        <div class="modal-thumbnail-item">
+                            <img src="./img/pic6.jpg" alt="iPhone White" class="modal-thumbnail-image">
+                        </div>
+                        <div class="modal-thumbnail-item">
+                            <img src="./img/pic5.jpg" alt="iPhone Gold" class="modal-thumbnail-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-product-info">
+                    <div class="modal-product-rating">
+                        <div class="rating-stars">
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star-half-alt rating-star"></i>
+                        </div>
+                        <span class="review-count">42 reviews</span>
+                    </div>
+
+                    <p class="modal-product-price">$1,299</p>
+
+                    <div class="modal-product-options">
+                        <h3 class="options-title">Storage Options</h3>
+                        <div class="option-buttons">
+                            <button class="option-button">128GB</button>
+                            <button class="option-button active-option">256GB</button>
+                            <button class="option-button">512GB</button>
+                            <button class="option-button">1TB</button>
+                        </div>
+                    </div>
+
+                    <div class="modal-product-options">
+                        <h3 class="options-title">Color</h3>
+                        <div class="color-swatches">
+                            <button class="color-swatch blue-swatch"></button>
+                            <button class="color-swatch black-swatch active-swatch"></button>
+                            <button class="color-swatch white-swatch"></button>
+                            <button class="color-swatch gold-swatch"></button>
+                        </div>
+                    </div>
+
+                    <div class="modal-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-button">-</button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-button">+</button>
+                        </div>
+                        <button class="modal-add-to-cart-button">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+
+                    <div class="modal-product-highlights">
+                        <h3 class="highlights-title">Highlights</h3>
+                        <ul class="highlights-list">
+                            <li>6.7-inch Super Retina XDR display</li>
+                            <li>A16 Bionic chip with 5-core GPU</li>
+                            <li>48MP Main camera with 2x Telephoto</li>
+                            <li>12MP Ultra Wide and Telephoto cameras</li>
+                            <li>Face ID for secure authentication</li>
+                            <li>5G capable for superfast downloads</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-tabs-container">
+                <div class="modal-tabs-header">
+                    <button class="modal-tab-button active-tab">Description</button>
+                    <button class="modal-tab-button">Specifications</button>
+                    <button class="modal-tab-button">Reviews</button>
+                    <button class="modal-tab-button">Shipping</button>
+                </div>
+
+                <div class="modal-tabs-content-area">
+                    <div class="modal-tab-content active-tab-content">
+                        <p>The iPhone 15 Pro Max pushes the boundaries of what a smartphone can do. Featuring a stunning 6.7-inch Super Retina XDR display, the most advanced A16 Bionic chip, and an innovative 48MP camera system that unlocks 2x Telephoto, it's designed for those who demand the very best.</p>
+                        <p>With its aerospace-grade titanium design, this is our lightest Pro model ever. The custom-designed 5-core GPU makes the iPhone 15 Pro Max incredibly fast and efficient, while the all-day battery life keeps you going longer than ever.</p>
+                    </div>
+                    <div class="modal-tab-content">
+                        <p>Detailed specifications will be listed here.</p>
+                    </div>
+                    <div class="modal-tab-content">
+                        <p>Customer reviews will be displayed here.</p>
+                    </div>
+                    <div class="modal-tab-content">
+                        <p>Shipping information will be provided here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="compare-modal" class="modal-overlay compare-products-modal">
+        <div class="modal-content compare-modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Compare Products</h2>
+                <button id="close-compare-modal" class="modal-close-button">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="compare-table-container">
+                <table class="compare-table">
+                    <thead>
+                        <tr class="compare-table-header-row">
+                            <th class="compare-table-empty-header"></th>
+                            <th class="compare-table-product-header">
+                                <div class="compare-product-info">
+                                    <img src="./img/pic5.jpg" alt="iPhone" class="compare-product-image">
+                                    <h3 class="compare-product-name">iPhone 15 Pro</h3>
+                                    <button class="compare-remove-button">
+                                        <i class="fas fa-times"></i> Remove
+                                    </button>
+                                </div>
+                            </th>
+                            <th class="compare-table-product-header">
+                                <div class="compare-product-info">
+                                    <img src="./img/pic4.jpg" alt="Samsung" class="compare-product-image">
+                                    <h3 class="compare-product-name">Samsung S23</h3>
+                                    <button class="compare-remove-button">
+                                        <i class="fas fa-times"></i> Remove
+                                    </button>
+                                </div>
+                            </th>
+                            <th class="compare-table-product-header">
+                                <div class="compare-product-info">
+                                    <img src="./img/pic3.jpg" alt="Pixel" class="compare-product-image">
+                                    <h3 class="compare-product-name">Pixel 7</h3>
+                                    <button class="compare-remove-button">
+                                        <i class="fas fa-times"></i> Remove
+                                    </button>
+                                </div>
+                            </th>
+                            <th class="compare-table-add-product-header">
+                                <button class="compare-add-product-button">
+                                    <i class="fas fa-plus"></i>
+                                    <span>Add Product</span>
+                                </button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="compare-table-row">
+                            <td class="compare-feature-name">Price</td>
+                            <td class="compare-feature-value">$999</td>
+                            <td class="compare-feature-value">$799</td>
+                            <td class="compare-feature-value">$599</td>
+                            <td class="compare-table-empty-cell"></td>
+                        </tr>
+                        <tr class="compare-table-row">
+                            <td class="compare-feature-name">Display</td>
+                            <td class="compare-feature-value">6.1" OLED</td>
+                            <td class="compare-feature-value">6.1" AMOLED</td>
+                            <td class="compare-feature-value">6.3" OLED</td>
+                            <td class="compare-table-empty-cell"></td>
+                        </tr>
+                        <tr class="compare-table-row">
+                            <td class="compare-feature-name">Processor</td>
+                            <td class="compare-feature-value">A16 Bionic</td>
+                            <td class="compare-feature-value">Snapdragon 8 Gen 2</td>
+                            <td class="compare-feature-value">Google Tensor G2</td>
+                            <td class="compare-table-empty-cell"></td>
+                        </tr>
+                        <tr class="compare-table-row">
+                            <td class="compare-feature-name">RAM</td>
+                            <td class="compare-feature-value">6GB</td>
+                            <td class="compare-feature-value">8GB</td>
+                            <td class="compare-feature-value">8GB</td>
+                            <td class="compare-table-empty-cell"></td>
+                        </tr>
+                        <tr class="compare-table-row">
+                            <td class="compare-feature-name">Storage</td>
+                            <td class="compare-feature-value">128GB/256GB/512GB</td>
+                            <td class="compare-feature-value">128GB/256GB</td>
+                            <td class="compare-feature-value">128GB/256GB</td>
+                            <td class="compare-table-empty-cell"></td>
+                        </tr>
+                        <tr class="compare-table-row">
+                            <td class="compare-feature-name">Camera</td>
+                            <td class="compare-feature-value">48MP + 12MP</td>
+                            <td class="compare-feature-value">50MP + 12MP + 10MP</td>
+                            <td class="compare-feature-value">50MP + 12MP</td>
+                            <td class="compare-table-empty-cell"></td>
+                        </tr>
+                        <tr class="compare-table-row">
+                            <td class="compare-feature-name">Battery</td>
+                            <td class="compare-feature-value">3200 mAh</td>
+                            <td class="compare-feature-value">3900 mAh</td>
+                            <td class="compare-feature-value">4355 mAh</td>
+                            <td class="compare-table-empty-cell"></td>
+                        </tr>
+                        <tr class="compare-table-row no-border">
+                            <td class="compare-feature-name">OS</td>
+                            <td class="compare-feature-value">iOS 16</td>
+                            <td class="compare-feature-value">Android 13</td>
+                            <td class="compare-feature-value">Android 13</td>
+                            <td class="compare-table-empty-cell"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="compare-modal-actions">
+                <button id="close-compare-modal-2" class="compare-cancel-button">
+                    Cancel
+                </button>
+                <button class="compare-add-to-cart-button">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <h2 class="section-title testimonials-main-title">What Our Customers Say</h2>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating-date">
+                        <div class="rating-stars">
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                        </div>
+                        <span class="testimonial-date">2 days ago</span>
+                    </div>
+                    <p class="testimonial-text">"The iPhone 15 Pro I bought from TechFarmZw is amazing! The camera quality is outstanding and the service was excellent. Will definitely shop here again."</p>
+                    <div class="testimonial-author-info">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer" class="author-image">
+                        <div>
+                            <p class="author-name">Sarah M.</p>
+                            <p class="author-location">Harare</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating-date">
+                        <div class="rating-stars">
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star-half-alt rating-star"></i>
+                        </div>
+                        <span class="testimonial-date">1 week ago</span>
+                    </div>
+                    <p class="testimonial-text">"Fast delivery and the phone was well packaged. The Samsung S23 Ultra works perfectly and the free screen protector was a nice bonus. Highly recommend!"</p>
+                    <div class="testimonial-author-info">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="author-image">
+                        <div>
+                            <p class="author-name">James T.</p>
+                            <p class="author-location">Bulawayo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating-date">
+                        <div class="rating-stars">
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="fas fa-star rating-star"></i>
+                            <i class="far fa-star rating-star"></i>
+                        </div>
+                        <span class="testimonial-date">3 weeks ago</span>
+                    </div>
+                    <p class="testimonial-text">"Great prices and customer service. My Google Pixel 7 arrived earlier than expected and works flawlessly. Will be my go-to phone shop from now on."</p>
+                    <div class="testimonial-author-info">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" class="author-image">
+                        <div>
+                            <p class="author-name">Linda K.</p>
+                            <p class="author-location">Mutare</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 TechFarmZw. All rights reserved.</p>
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h2 class="section-title newsletter-title">Stay Updated</h2>
+            <p class="newsletter-subtitle">Subscribe to our newsletter for the latest deals, product launches, and tech news.</p>
+
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" class="newsletter-input">
+                <button type="submit" class="newsletter-submit-button">
+                    Subscribe
+                </button>
+            </form>
+
+            <p class="newsletter-privacy-note">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-logo">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>TechFarm<span class="logo-accent">Zw</span></span>
+                    </h3>
+                    <p class="footer-about-text">Your trusted source for premium smartphones and accessories in Zimbabwe.</p>
+                    <div class="footer-social-icons">
+                        <a href="#" class="social-icon-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Shop</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="#" class="footer-link">Smartphones</a></li>
+                        <li><a href="#" class="footer-link">Feature Phones</a></li>
+                        <li><a href="#" class="footer-link">Refurbished Phones</a></li>
+                        <li><a href="#" class="footer-link">Phone Accessories</a></li>
+                        <li><a href="#" class="footer-link">Special Offers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Support</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Shipping Policy</a></li>
+                        <li><a href="#" class="footer-link">Returns & Warranty</a></li>
+                        <li><a href="#" class="footer-link">Payment Methods</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Contact</h3>
+                    <ul class="footer-contact-list">
+                        <li class="contact-list-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Tech Street, Harare</span>
+                        </li>
+                        <li class="contact-list-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+263 123 456 789</span>
+                        </li>
+                        <li class="contact-list-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@techfarmzw.com</span>
+                        </li>
+                        <li class="contact-list-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 8AM - 5PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p class="copyright-text">© 2025 TechFarmZw. All rights reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Cookies</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <button id="back-to-top" class="back-to-top-button">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
